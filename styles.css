@@ -1,0 +1,205 @@
+/*Created by Dirk Spence*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Molle&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap');
+
+
+:root{
+
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+
+
+    font-size: 16px;
+  }
+
+
+h1, h2, h3 {
+    font-family: "Molle", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+h4, p, q, small, nav, button, form {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size:xx-large;
+}
+
+h2{
+    font-size:x-large;
+}
+
+header{
+    background-image: linear-gradient(teal, white);
+}
+
+@media (min-width: 430px) {
+    
+
+#plan{
+    background-color: var(--yellow);
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+#plan section{
+    background-color: var(--teal);
+    padding: 50px;
+    border: 5px solid var(--white);
+    border-radius: 10px;
+}
+#plan img{
+    width: 150px;
+}
+#plan h4{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#plan h3{
+    padding: 20px;
+    font-size: x-large;
+    
+}
+
+#testimonials h3{
+    padding: 20px;
+    font-size: x-large;
+}
+
+#skip{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+header{
+    display: flex;
+}
+
+#menu-toggle{
+    background-color: var(--yellow);
+    border-radius: 5px;
+    position: absolute;
+    right: auto;
+}
+
+.sr-only{
+    visibility: hidden;
+}
+
+#testimonials{
+    padding: 30px;
+}
+
+#testimonials h4{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#testimonals section{
+    width:100px;
+}
+
+#about{
+    background-color: var(--blue);
+    
+}
+#about h3{
+    font-size: x-large;
+    padding:20px;
+}
+
+#about h4{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about section{
+    padding: 20px;
+    display: flex;
+}
+
+#contact h3{
+    font-size: x-large;
+
+}
+
+#contact form{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+}
+#contact input{
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer{
+    background-color: var(--light-gray);
+    padding: 30px;
+}
+}
